@@ -1,0 +1,130 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #ffffff; /* Optional background color */
+}
+
+.head-main{
+  top: 0;
+  left: 0;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+.head-first{
+  color: #414141;
+  font-size: 22px;
+  line-height: 28.8px;
+  text-align: left;
+}
+.head-second{
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+/* Styling for Cards */
+.card-container{
+  display: flex;
+  flex: 1;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards horizontally */
+  align-items: center;
+  cursor: pointer;
+  transition: flex 0.3s ease; /* Smooth transition for resizing */
+  place-items: center;
+}
+
+.card{
+  border-radius: 32px;
+  height: 420px;
+  width: auto;
+  cursor: pointer;
+  transition: width 0.5s ease;
+  overflow: hidden;
+}
+
+.text {
+  font-size: large;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px; /* Optional spacing between text and the icon */
+  width: auto; /* Ensures it spans the container's width */
+
+}
+.arrow{
+  justify-items: center;
+  align-items: center;
+  animation: moveArrow 1s ease-in-out infinite; /* Apply animation */
+}
+
+/* Keyframes for left-right movement */
+@keyframes moveArrow {
+  0%, 100% {
+    transform: translateX(0); /* Starting and ending position */
+  }
+  50% {
+    transform: translateX(10px); /* Move to the right */
+  }
+}
+
+.card-img {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 25px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img img{
+  height: 100px; /* Set the height */
+  width: 100px; /* Optional: Match the card width */
+}
+
+.card .number{
+  font-size: 130px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  /* padding-left: 50px;
+  padding-top: 30px; */
+  text-align: left;
+}
+
+.info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  order: 2;
+}
+
+.info-1{
+  display: flex;
+  flex-direction: column; /* Horizontal layout */
+  padding-left: 10px;
+  gap: 10px;
+}
+
+.info-first{
+  font-size: 30px;
+}
+
+.number .plus{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
